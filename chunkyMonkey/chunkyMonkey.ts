@@ -1,5 +1,5 @@
-function chunkyMonkey(arr: any[], size: number): any[][] {
-
+function chunkyMonkey(arr: any[], size: number): any[][] { 
+    return [arr.slice(0,size), arr.slice(size)];
 }
 
 console.log(chunkyMonkey(["a", "b", "c", "d"], 2));

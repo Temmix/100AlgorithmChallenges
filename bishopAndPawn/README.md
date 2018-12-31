@@ -32,3 +32,4 @@ Coordinates of the black pawn in the same notation.
 - **[output] boolean**
 
 true if the bishop can capture the pawn, false otherwise.
+Note, cheese board is 8 X 8 board.

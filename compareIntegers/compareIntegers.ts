@@ -1,5 +1,6 @@
-function compareIntegers(a: string, b: string): string {
-
+function compareIntegers(a: string, b: string): string { 
+  if(+a === +b) return 'equal';
+  return +a > +b ? 'greater' : 'less'; 
 }
 
 console.log(compareIntegers('12', '13'));
