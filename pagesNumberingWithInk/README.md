@@ -9,7 +9,7 @@ It's guaranteed that you can number the current page, and that you can't number 
 **Example**
 
 -   For current = 1 and numberOfDigits = 5, the output should be
-pagesNumberingWithInk(current, numberOfDigits) = 5.
+pagesNumberingWithInk(current, numberOfDigits) = 5
 
 The following numbers will be printed: 1, 2, 3, 4, 5.
 

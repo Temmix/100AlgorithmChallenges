@@ -1,5 +1,6 @@
 function validTime(time: string): boolean {
-
+    const list = time.split(':');
+    return +list[0] < 24 && +list[1] < 60;
 }
 
 console.log(validTime('13:58'));
