@@ -2,9 +2,7 @@ function reverseInParentheses(inputString: string): string {
     let first = undefined;
     let second = undefined;
     const list = inputString.split('');
-    let counter = 0; 
-    while(counter < 10){
-        counter++
+    while(true){
         if(list.indexOf(')') === -1) break;
         for(let i = 0; i < list.length; i++){ 
             if(first === undefined && list[i] === '('){
