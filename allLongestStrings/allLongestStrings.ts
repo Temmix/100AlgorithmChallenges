@@ -1,10 +1,6 @@
 function allLongestStrings(inputArray: string[]): string[] {
-    let length = 1;
-    inputArray.forEach(x => {
-        length = x.length > length ? x.length : length;
-    });
-    return inputArray.filter(x => x.length === length);
-
+  let length = Math.max(...inputArray.map(x => x.length));
+  return inputArray.filter(a => a.length === length);
 }
 
 console.log(allLongestStrings(["aba", "aa", "ad", "vcd", "aba"]));

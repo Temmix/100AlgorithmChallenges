@@ -1,14 +1,9 @@
-// To be fixed.
 function arrayPreviousLess(items: number[]): number[] {
-
-    for(let i = 0; i < items.length - 1; i++){
-        if (i == 0) 
-            items.unshift(-1);
-        else {
-            if (items[i] > items[i - 1]) items.unshift(i, items[i -1]);
-        }
-    }
-    return items;
+  const list = [];
+  items.forEach((x, i) => {
+    items[i - 1] < x ? list.push(items[i - 1]) : list.push(-1);
+  });
+  return list;
 }
 
 console.log(arrayPreviousLess([3, 5, 2, 4, 5]));
